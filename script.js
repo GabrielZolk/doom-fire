@@ -1,6 +1,6 @@
 const firePixelsArray = [];
-const fireWidth = 60;
-const fireHeight = 60;
+const fireWidth = 40;
+const fireHeight = 40;
 const fireColorsPalette = [
     { r: 7, g: 7, b: 7, a: 0 },
     { r: 31, g: 7, b: 7, a: 1 },
@@ -47,7 +47,7 @@ function start() {
     createFireSource()
     renderFire()
 
-    setInterval(calculateFirePropagation, 1)
+    setInterval(calculateFirePropagation, 50)
 }
 
 function createFireDataStructure() {
